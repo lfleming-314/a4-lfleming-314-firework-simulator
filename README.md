@@ -1,7 +1,7 @@
 Assignment 4 - Creative Coding: Interactive Multimedia Experiences
 ===
 
-Due: October 9th, by 11:59 PM.
+Due: October 11th, by 11:59 PM.
 
 For this assignment we will focus on client-side development using popular audio/graphics/visualization technologies; the server requirements are minimal. The goal of this assignment is to refine our JavaScript knowledge while exploring the multimedia capabilities of the browser.
 
