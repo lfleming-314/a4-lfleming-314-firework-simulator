@@ -11,21 +11,21 @@ app.use(bodyParser.json());
 
 // load the index page on request
 app.get("/", (request, response) => {
-  response.sendFile(__dirname + "/views/index.html");
+  response.sendFile(__dirname + "/index.html");
 });
 app.get("/index.html", (request, response) => {
-  response.sendFile(__dirname + "/views/index.html");
+  response.sendFile(__dirname + "/index.html");
 })
 app.get("/index", (request, response) => {
-  response.sendFile(__dirname + "/views/index.html");
+  response.sendFile(__dirname + "/index.html");
 })
 
 //load the canvas page on request
 app.get("/canvas.html", (request, response) => {
-  response.sendFile(__dirname + "/views/canvas.html");
+  response.sendFile(__dirname + "/canvas.html");
 })
 app.get("/canvas", (request, response) => {
-  response.sendFile(__dirname + "/views/canvas.html");
+  response.sendFile(__dirname + "/canvas.html");
 })
 
 //store properties on server
