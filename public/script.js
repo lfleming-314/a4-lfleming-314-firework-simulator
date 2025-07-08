@@ -42,7 +42,7 @@ var properties = {};
 window.onload = function() {
     if(window.location.href.includes("canvas")) { //on canvas page
         //get info from server
-        fetch("properties", {method: "GET"}).then(response => response.json()).then(json => {
+        fetch("/properties", {method: "GET"}).then(response => response.json()).then(json => {
             console.log("canvas fetched");
             for (var parameter in json) {
                 properties[parameter] = json[parameter];
@@ -50,7 +50,7 @@ window.onload = function() {
         }).then(console.log("loaded properties from server"));
     } else { //on index page
         //get info from server and populate html forms
-        fetch("properties", {method: "GET"}).then(response => response.json()).then(json => {
+        fetch("/properties", {method: "GET"}).then(response => response.json()).then(json => {
             checkBox("reds", json.reds);
             checkBox("oranges", json.oranges);
             checkBox("yellows", json.yellows);
